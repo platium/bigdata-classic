@@ -9,14 +9,32 @@
       "size": "LARGE"
     },
     {
+      "name": "memcached-1",
+      "template": "memcached@7e6a231303b69374c6c0e0a4f3df2ffcfc298d3a",
+      "peer_group": "MASTER-GROUP-1",
+      "size": "LARGE"
+    },
+    {
       "name": "tomcat-2",
       "template": "tomcat8@4361d4648dbe94226a7dceab1978b8fc44f08212",
       "peer_group": "MASTER-GROUP-2",
       "size": "LARGE"
     },
     {
+      "name": "memcached-2",
+      "template": "memcached@7e6a231303b69374c6c0e0a4f3df2ffcfc298d3a",
+      "peer_group": "MASTER-GROUP-2",
+      "size": "LARGE"
+    },
+    {
       "name": "tomcat-3",
       "template": "tomcat8@4361d4648dbe94226a7dceab1978b8fc44f08212",
+      "peer_group": "MASTER-GROUP-3",
+      "size": "LARGE"
+    },
+    {
+      "name": "memcached-3",
+      "template": "memcached@7e6a231303b69374c6c0e0a4f3df2ffcfc298d3a",
       "peer_group": "MASTER-GROUP-3",
       "size": "LARGE"
     },
