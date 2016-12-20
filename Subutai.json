@@ -1,0 +1,162 @@
+{
+  "name": "Modern-Real-Time-Big-Data-Stack",
+  "description": "Modern Real-Time Big Data Stack",
+  "nodes": [
+    {
+      "name": "tomcat-1",
+      "template": "tomcat8@4361d4648dbe94226a7dceab1978b8fc44f08212",
+      "peer_group": "MASTER-GROUP-1",
+      "size": "LARGE"
+    },
+    {
+      "name": "tomcat-2",
+      "template": "tomcat8@4361d4648dbe94226a7dceab1978b8fc44f08212",
+      "peer_group": "MASTER-GROUP-2",
+      "size": "LARGE"
+    },
+    {
+      "name": "tomcat-3",
+      "template": "tomcat8@4361d4648dbe94226a7dceab1978b8fc44f08212",
+      "peer_group": "MASTER-GROUP-3",
+      "size": "LARGE"
+    },
+    {
+      "name": "name-node",
+      "template": "hadoop",
+      "peer_group": "MASTER-GROUP-1",
+      "size": "MEDIUM"
+    },
+    {
+      "name": "secondary-name-node",
+      "template": "hadoop",
+      "peer_group": "MASTER-GROUP-2",
+      "size": "MEDIUM"
+    },
+    {
+      "name": "job-tracker",
+      "template": "hadoop",
+      "peer_group": "MASTER-GROUP-3",
+      "size": "MEDIUM"
+    },
+    {
+      "name": "data-node-1-1",
+      "template": "hadoop",
+      "peer_group": "DATA-GROUP-1-1",
+      "size": "HUGE"
+    },
+    {
+      "name": "data-node-1-2",
+      "template": "hadoop",
+      "peer_group": "DATA-GROUP-1-2",
+      "size": "HUGE"
+    },
+    {
+      "name": "data-node-1-3",
+      "template": "hadoop",
+      "peer_group": "DATA-GROUP-1-3",
+      "size": "HUGE"
+    },
+    {
+      "name": "data-node-2-1",
+      "template": "hadoop",
+      "peer_group": "DATA-GROUP-2-1",
+      "size": "HUGE"
+    },
+    {
+      "name": "data-node-2-2",
+      "template": "hadoop",
+      "peer_group": "DATA-GROUP-2-2",
+      "size": "HUGE"
+    },
+    {
+      "name": "data-node-2-3",
+      "template": "hadoop",
+      "peer_group": "DATA-GROUP-2-3",
+      "size": "HUGE"
+    }
+  ],
+  "peerGroups": [
+    {
+      "name": "MASTER-GROUP-1",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "512MiB",
+        "minFreeDiskSpace": "500MiB"
+      }
+    },
+    {
+      "name": "MASTER-GROUP-2",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "512MiB",
+        "minFreeDiskSpace": "500MiB"
+      }
+    },
+    {
+      "name": "MASTER-GROUP-3",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "512MiB",
+        "minFreeDiskSpace": "500MiB"
+      }
+    },
+    {
+      "name": "DATA-GROUP-1-1",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "1024MiB",
+        "minFreeDiskSpace": "1024MiB"
+      }
+    },
+    {
+      "name": "DATA-GROUP-1-2",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "1024MiB",
+        "minFreeDiskSpace": "1024MiB"
+      }
+    },
+    {
+      "name": "DATA-GROUP-1-3",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "1024MiB",
+        "minFreeDiskSpace": "1024MiB"
+      }
+    },
+    {
+      "name": "DATA-GROUP-2-1",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "1024MiB",
+        "minFreeDiskSpace": "1024MiB"
+      }
+    },
+    {
+      "name": "DATA-GROUP-2-2",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "1024MiB",
+        "minFreeDiskSpace": "1024MiB"
+      }
+    },
+    {
+      "name": "DATA-GROUP-2-3",
+      "maxPeersInGroup": "1",
+      "hwPreferences": {
+        "avgCpuLoad": "10",
+        "minFreeRam": "1024MiB",
+        "minFreeDiskSpace": "1024MiB"
+      }
+    }
+  ],
+  "configuration": {}
+}
