@@ -1,6 +1,6 @@
 {
-  "name": "Modern-Real-Time-Big-Data-Stack",
-  "description": "Modern Real-Time Big Data Stack",
+  "name": "Classic-MR-Big-Data-Stack",
+  "description": "Classic MR Big Data Stack",
   "nodes": [
     {
       "name": "tomcat-1",
