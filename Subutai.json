@@ -73,6 +73,12 @@
       "template": "hadoop",
       "peer_group": "DATA-GROUP-1-3",
       "size": "HUGE"
+    },
+    {
+      "name": "apache-impala-1",
+      "template": "apache-impala@b986652a73f7446b7ea9a9ed4c8100e8ef3079f0",
+      "peer_group": "MASTER-GROUP-1-3",
+      "size": "MEDIUM"
     }
   ],
   "peerGroups": [
