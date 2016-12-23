@@ -73,24 +73,6 @@
       "template": "hadoop",
       "peer_group": "DATA-GROUP-1-3",
       "size": "HUGE"
-    },
-    {
-      "name": "data-node-2-1",
-      "template": "hadoop",
-      "peer_group": "DATA-GROUP-2-1",
-      "size": "HUGE"
-    },
-    {
-      "name": "data-node-2-2",
-      "template": "hadoop",
-      "peer_group": "DATA-GROUP-2-2",
-      "size": "HUGE"
-    },
-    {
-      "name": "data-node-2-3",
-      "template": "hadoop",
-      "peer_group": "DATA-GROUP-2-3",
-      "size": "HUGE"
     }
   ],
   "peerGroups": [
@@ -141,33 +123,6 @@
     },
     {
       "name": "DATA-GROUP-1-3",
-      "maxPeersInGroup": "1",
-      "hwPreferences": {
-        "avgCpuLoad": "10",
-        "minFreeRam": "1024MiB",
-        "minFreeDiskSpace": "1024MiB"
-      }
-    },
-    {
-      "name": "DATA-GROUP-2-1",
-      "maxPeersInGroup": "1",
-      "hwPreferences": {
-        "avgCpuLoad": "10",
-        "minFreeRam": "1024MiB",
-        "minFreeDiskSpace": "1024MiB"
-      }
-    },
-    {
-      "name": "DATA-GROUP-2-2",
-      "maxPeersInGroup": "1",
-      "hwPreferences": {
-        "avgCpuLoad": "10",
-        "minFreeRam": "1024MiB",
-        "minFreeDiskSpace": "1024MiB"
-      }
-    },
-    {
-      "name": "DATA-GROUP-2-3",
       "maxPeersInGroup": "1",
       "hwPreferences": {
         "avgCpuLoad": "10",
